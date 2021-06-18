@@ -1,0 +1,54 @@
+2021-06-04T16:28:20.826Z [jfrou] [INFO ] [3b76fdb22f92c82b] [bootstrap.go:76               ] [main                ] - Router (jfrou) service initialization started. Version: 7.19.4-1 Revision: a650c79d3af810e94b7a9f7f2d843c669475b700 PID: 3380 Home: /opt/jfrog/artifactory
+2021-06-04T16:28:20.827Z [jfrou] [INFO ] [3b76fdb22f92c82b] [bootstrap.go:79               ] [main                ] - JFrog Router IP: 172.17.0.2
+2021-06-04T16:28:25.831Z [jfrou] [INFO ] [3b76fdb22f92c82b] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 5 seconds with 2m0s timeout
+2021-06-04T16:28:30.835Z [jfrou] [INFO ] [3b76fdb22f92c82b] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 10 seconds with 2m0s timeout
+2021-06-04T16:28:35.842Z [jfrou] [INFO ] [3b76fdb22f92c82b] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 15 seconds with 2m0s timeout
+2021-06-04T16:28:40.848Z [jfrou] [INFO ] [3b76fdb22f92c82b] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 20 seconds with 2m0s timeout
+2021-06-04T16:28:45.866Z [jfrou] [INFO ] [3b76fdb22f92c82b] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 25 seconds with 2m0s timeout
+2021-06-04T16:28:50.875Z [jfrou] [INFO ] [3b76fdb22f92c82b] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 30 seconds with 2m0s timeout
+2021-06-04T16:28:55.879Z [jfrou] [INFO ] [3b76fdb22f92c82b] [security_keys.go:149          ] [main                ] - Master key is missing. Pending for 35 seconds with 2m0s timeout
+2021-06-04T16:29:00.884Z [jfrou] [INFO ] [3b76fdb22f92c82b] [security_keys.go:163          ] [main                ] - Cluster join: Join key is missing. Pending for 40 seconds with 2m0s timeout
+2021-06-04T16:29:05.910Z [jfrou] [INFO ] [3b76fdb22f92c82b] [security_keys.go:163          ] [main                ] - Cluster join: Join key is missing. Pending for 45 seconds with 2m0s timeout
+2021-06-04T16:29:10.916Z [jfrou] [INFO ] [3b76fdb22f92c82b] [security_keys.go:163          ] [main                ] - Cluster join: Join key is missing. Pending for 50 seconds with 2m0s timeout
+2021-06-04T16:29:13.920Z [jfrou] [INFO ] [3b76fdb22f92c82b] [bootstrap.go:192              ] [main                ] - System configuration encryption report:
+shared.newrelic.licenseKey: does not exist in the config file
+shared.security.joinKeyFile: file '/opt/jfrog/artifactory/var/etc/security/join.key' - already encrypted
+2021-06-04T16:29:13.923Z [jfrou] [INFO ] [3b76fdb22f92c82b] [bootstrap.go:84               ] [main                ] - JFrog Router Service ID: jfrou@01f7bxpwt3bxgstp75wx9ybgem
+2021-06-04T16:29:13.924Z [jfrou] [INFO ] [3b76fdb22f92c82b] [bootstrap.go:85               ] [main                ] - JFrog Router Node ID: ebfb15a63885
+2021-06-04T16:29:13.993Z [jfrou] [INFO ] [3b76fdb22f92c82b] [http_client_holder.go:155     ] [main                ] - System cert pool contents were loaded as trusted CAs for TLS communication
+2021-06-04T16:29:14.834Z [jfrou] [INFO ] [3b76fdb22f92c82b] [config_holder.go:107          ] [main                ] - Configuration update detected
+2021-06-04T16:29:24.327Z [jfrou] [INFO ] [3b76fdb22f92c82b] [join_executor.go:116          ] [main                ] - Cluster join: Trying to rejoin the cluster
+2021-06-04T16:29:25.577Z [jfrou] [INFO ] [3b76fdb22f92c82b] [join_executor.go:205          ] [main                ] - Cluster join: Successfully joined the cluster
+2021-06-04T16:29:25.580Z [jfrou] [INFO ] [3b76fdb22f92c82b] [http_client_holder.go:155     ] [main                ] - System cert pool contents were loaded as trusted CAs for TLS communication
+2021-06-04T16:29:25.581Z [jfrou] [INFO ] [3b76fdb22f92c82b] [http_client_holder.go:175     ] [main                ] - Following certificates were successfully loaded as trusted CAs for TLS communication:
+[/opt/jfrog/artifactory/var/data/router/keys/trusted/access-root-ca.crt]
+2021-06-04T16:29:25.650Z [jfrou] [INFO ] [3b76fdb22f92c82b] [main.go:47                    ] [main                ] - Router (jfrou) service initialization completed in 64.828 seconds. Listening on port: 8082
+2021-06-04T16:30:35.723Z [jfrou] [INFO ] [381ea0cca862ff0d] [local_topology.go:258         ] [main                ] - 
+################################################################
+###   All services started successfully in 134.901 seconds   ###
+################################################################
+2021-06-11T18:13:44.986Z [jfrou] [INFO ] [75be1eab595a09c6] [bootstrap.go:76               ] [main                ] - Router (jfrou) service initialization started. Version: 7.19.4-1 Revision: a650c79d3af810e94b7a9f7f2d843c669475b700 PID: 3037 Home: /opt/jfrog/artifactory
+2021-06-11T18:13:44.991Z [jfrou] [INFO ] [75be1eab595a09c6] [bootstrap.go:79               ] [main                ] - JFrog Router IP: 172.17.0.3
+2021-06-11T18:13:45.013Z [jfrou] [INFO ] [75be1eab595a09c6] [bootstrap.go:192              ] [main                ] - System configuration encryption report:
+shared.newrelic.licenseKey: does not exist in the config file
+shared.security.joinKeyFile: file '/opt/jfrog/artifactory/var/etc/security/join.key' - already encrypted
+2021-06-11T18:13:45.014Z [jfrou] [INFO ] [75be1eab595a09c6] [bootstrap.go:84               ] [main                ] - JFrog Router Service ID: jfrou@01f7bxpwt3bxgstp75wx9ybgem
+2021-06-11T18:13:45.015Z [jfrou] [INFO ] [75be1eab595a09c6] [bootstrap.go:85               ] [main                ] - JFrog Router Node ID: 0cadb01a066c
+2021-06-11T18:13:45.060Z [jfrou] [INFO ] [75be1eab595a09c6] [http_client_holder.go:155     ] [main                ] - System cert pool contents were loaded as trusted CAs for TLS communication
+2021-06-11T18:13:45.062Z [jfrou] [INFO ] [75be1eab595a09c6] [http_client_holder.go:175     ] [main                ] - Following certificates were successfully loaded as trusted CAs for TLS communication:
+[/opt/jfrog/artifactory/var/data/router/keys/trusted/access-root-ca.crt]
+2021-06-11T18:13:46.988Z [jfrou] [INFO ] [75be1eab595a09c6] [config_holder.go:107          ] [main                ] - Configuration update detected
+2021-06-11T18:14:04.311Z [jfrou] [INFO ] [75be1eab595a09c6] [join_executor.go:165          ] [main                ] - Cluster join: Retry 5: Service registry ping failed, will retry. Error: Get "http://localhost:8040/access/api/v1/system/ping": net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+2021-06-11T18:15:14.219Z [jfrou] [INFO ] [75be1eab595a09c6] [join_executor.go:116          ] [main                ] - Cluster join: Trying to rejoin the cluster
+2021-06-11T18:15:20.577Z [jfrou] [INFO ] [75be1eab595a09c6] [join_executor.go:205          ] [main                ] - Cluster join: Successfully joined the cluster
+2021-06-11T18:15:20.638Z [jfrou] [INFO ] [75be1eab595a09c6] [http_client_holder.go:155     ] [main                ] - System cert pool contents were loaded as trusted CAs for TLS communication
+2021-06-11T18:15:20.698Z [jfrou] [INFO ] [75be1eab595a09c6] [http_client_holder.go:175     ] [main                ] - Following certificates were successfully loaded as trusted CAs for TLS communication:
+[/opt/jfrog/artifactory/var/data/router/keys/trusted/access-root-ca.crt]
+2021-06-11T18:15:23.276Z [jfrou] [INFO ] [75be1eab595a09c6] [main.go:47                    ] [main                ] - Router (jfrou) service initialization completed in 98.301 seconds. Listening on port: 8082
+2021-06-11T18:15:39.141Z [jfrou] [ERROR] [6abe4c5682f8636c] [local_topology.go:123         ] [main                ] - periodic send heartbeat failed for 4 consecutive times. Last error: failed sending heartbeat information to Access: failed closing Access grpc client: rpc error: code = Unimplemented desc = Not Found: HTTP status code 404; transport: received the unexpected content-type "text/plain; charset=utf-8"
+2021-06-11T18:15:48.330Z [jfrou] [ERROR] [112c0c8451738b0f] [local_topology.go:123         ] [main                ] - periodic send heartbeat failed for 5 consecutive times. Last error: failed sending heartbeat information to Access: failed closing Access grpc client: closing heartbeat client and waiting for response timed-out
+2021-06-11T18:15:48.606Z [jfrou] [INFO ] [48841682ea6df534] [local_topology.go:136         ] [main                ] - Periodic send heartbeat succeeded after 5 consecutive failures.
+2021-06-11T18:17:05.925Z [jfrou] [INFO ] [ca251832b516374 ] [local_topology.go:258         ] [main                ] - 
+################################################################
+###   All services started successfully in 200.946 seconds   ###
+################################################################

@@ -1,0 +1,10 @@
+commit e89aa775c239d0dedc8ba4e8d25a70407290b367
+tree d9a2029ba4b6e777dc023a9bbf0263a50bf97053
+parent 70a45872b7faa107fa2d4e798255059d3902a80c
+author Maciek_M <maciejmarekmajewski@gmail.com> 2021-06-11 18:02:29 +0000
+committer Maciek_M <maciejmarekmajewski@gmail.com> 2021-06-11 18:02:29 +0000
+
+    add selenium
+
+
+:100644 100644 95a787ec3a7d69b26787ed6828d63cf5c8e6c550 a85707d926893fce0c53e08e2e92183e4bf9b2bb M	src/test/java/pl/pandait/panda/PandaApplicationSeleniumTest.java

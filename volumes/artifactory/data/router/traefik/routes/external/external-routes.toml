@@ -1,0 +1,653 @@
+[frontends]
+
+  
+  
+  
+      [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-0-jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-internal]
+        entryPoints = ["internal"]
+        backend = "jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c"
+        priority = 2023
+        [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-0-jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-internal.routes.match]
+          rule = "Path: /{part0:com\\.jfrog\\.access\\..*}"
+        [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-0-jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-internal.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-0-jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-internal.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-0-blackhole-internal]
+      entryPoints = ["internal"]
+      backend = "blackhole"
+      priority = 1023
+      [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-0-blackhole-internal.routes.match]
+        rule = "Path: /{part0:com\\.jfrog\\.access\\..*}"
+      [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-0-blackhole-internal.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+      [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-0-jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-external]
+        entryPoints = ["external"]
+        backend = "jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c"
+        priority = 2023
+        [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-0-jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-external.routes.match]
+          rule = "Path: /{part0:com\\.jfrog\\.access\\..*}"
+        [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-0-jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-external.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-0-jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-external.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-0-blackhole-external]
+      entryPoints = ["external"]
+      backend = "blackhole"
+      priority = 1023
+      [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-0-blackhole-external.routes.match]
+        rule = "Path: /{part0:com\\.jfrog\\.access\\..*}"
+      [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-0-blackhole-external.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+  
+  
+  
+      [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-1-jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-internal]
+        entryPoints = ["internal"]
+        backend = "jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c"
+        priority = 2009
+        [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-1-jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-internal.routes.match]
+          rule = "Path: /{part0:access}/{part1:.*}"
+        [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-1-jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-internal.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-1-jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-internal.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-1-blackhole-internal]
+      entryPoints = ["internal"]
+      backend = "blackhole"
+      priority = 1009
+      [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-1-blackhole-internal.routes.match]
+        rule = "Path: /{part0:access}/{part1:.*}"
+      [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-1-blackhole-internal.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+      [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-1-jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-external]
+        entryPoints = ["external"]
+        backend = "jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c"
+        priority = 2009
+        [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-1-jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-external.routes.match]
+          rule = "Path: /{part0:access}/{part1:.*}"
+        [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-1-jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-external.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-1-jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-external.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-1-blackhole-external]
+      entryPoints = ["external"]
+      backend = "blackhole"
+      priority = 1009
+      [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-1-blackhole-external.routes.match]
+        rule = "Path: /{part0:access}/{part1:.*}"
+      [frontends.jfac_01f7bxpcdnjjsh1zk5xct909a5-1-blackhole-external.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+  
+  
+
+  
+  
+  
+      [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-0-jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-internal]
+        entryPoints = ["internal"]
+        backend = "jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c"
+        priority = 2022
+        [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-0-jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-internal.routes.match]
+          rule = "Path: /{part0:com\\.jfrog\\.event\\..*}"
+        [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-0-jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-internal.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-0-jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-internal.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-0-blackhole-internal]
+      entryPoints = ["internal"]
+      backend = "blackhole"
+      priority = 1022
+      [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-0-blackhole-internal.routes.match]
+        rule = "Path: /{part0:com\\.jfrog\\.event\\..*}"
+      [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-0-blackhole-internal.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+      [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-0-jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-external]
+        entryPoints = ["external"]
+        backend = "jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c"
+        priority = 2022
+        [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-0-jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-external.routes.match]
+          rule = "Path: /{part0:com\\.jfrog\\.event\\..*}"
+        [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-0-jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-external.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-0-jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-external.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-0-blackhole-external]
+      entryPoints = ["external"]
+      backend = "blackhole"
+      priority = 1022
+      [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-0-blackhole-external.routes.match]
+        rule = "Path: /{part0:com\\.jfrog\\.event\\..*}"
+      [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-0-blackhole-external.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+  
+  
+  
+      [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-1-jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-internal]
+        entryPoints = ["internal"]
+        backend = "jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c"
+        priority = 2011
+        [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-1-jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-internal.routes.match]
+          rule = "Path: /{part0:event}/{part1:(.*)}"
+        [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-1-jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-internal.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-1-jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-internal.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-1-blackhole-internal]
+      entryPoints = ["internal"]
+      backend = "blackhole"
+      priority = 1011
+      [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-1-blackhole-internal.routes.match]
+        rule = "Path: /{part0:event}/{part1:(.*)}"
+      [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-1-blackhole-internal.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+      [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-1-jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-external]
+        entryPoints = ["external"]
+        backend = "jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c"
+        priority = 2011
+        [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-1-jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-external.routes.match]
+          rule = "Path: /{part0:event}/{part1:(.*)}"
+        [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-1-jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-external.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-1-jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c-external.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-1-blackhole-external]
+      entryPoints = ["external"]
+      backend = "blackhole"
+      priority = 1011
+      [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-1-blackhole-external.routes.match]
+        rule = "Path: /{part0:event}/{part1:(.*)}"
+      [frontends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-1-blackhole-external.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+  
+  
+
+  
+  
+  
+      [frontends.jffe_000-0-jffe_000-0cadb01a066c-internal]
+        entryPoints = ["internal"]
+        backend = "jffe_000-0cadb01a066c"
+        priority = 2001
+        [frontends.jffe_000-0-jffe_000-0cadb01a066c-internal.routes.match]
+          rule = "Path: /"
+        [frontends.jffe_000-0-jffe_000-0cadb01a066c-internal.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jffe_000-0-jffe_000-0cadb01a066c-internal.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jffe_000-0-blackhole-internal]
+      entryPoints = ["internal"]
+      backend = "blackhole"
+      priority = 1001
+      [frontends.jffe_000-0-blackhole-internal.routes.match]
+        rule = "Path: /"
+      [frontends.jffe_000-0-blackhole-internal.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+      [frontends.jffe_000-0-jffe_000-0cadb01a066c-external]
+        entryPoints = ["external"]
+        backend = "jffe_000-0cadb01a066c"
+        priority = 2001
+        [frontends.jffe_000-0-jffe_000-0cadb01a066c-external.routes.match]
+          rule = "Path: /"
+        [frontends.jffe_000-0-jffe_000-0cadb01a066c-external.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jffe_000-0-jffe_000-0cadb01a066c-external.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jffe_000-0-blackhole-external]
+      entryPoints = ["external"]
+      backend = "blackhole"
+      priority = 1001
+      [frontends.jffe_000-0-blackhole-external.routes.match]
+        rule = "Path: /"
+      [frontends.jffe_000-0-blackhole-external.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+  
+  
+  
+      [frontends.jffe_000-1-jffe_000-0cadb01a066c-internal]
+        entryPoints = ["internal"]
+        backend = "jffe_000-0cadb01a066c"
+        priority = 2003
+        [frontends.jffe_000-1-jffe_000-0cadb01a066c-internal.routes.match]
+          rule = "Path: /{part0:ui}"
+        [frontends.jffe_000-1-jffe_000-0cadb01a066c-internal.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jffe_000-1-jffe_000-0cadb01a066c-internal.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jffe_000-1-blackhole-internal]
+      entryPoints = ["internal"]
+      backend = "blackhole"
+      priority = 1003
+      [frontends.jffe_000-1-blackhole-internal.routes.match]
+        rule = "Path: /{part0:ui}"
+      [frontends.jffe_000-1-blackhole-internal.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+      [frontends.jffe_000-1-jffe_000-0cadb01a066c-external]
+        entryPoints = ["external"]
+        backend = "jffe_000-0cadb01a066c"
+        priority = 2003
+        [frontends.jffe_000-1-jffe_000-0cadb01a066c-external.routes.match]
+          rule = "Path: /{part0:ui}"
+        [frontends.jffe_000-1-jffe_000-0cadb01a066c-external.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jffe_000-1-jffe_000-0cadb01a066c-external.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jffe_000-1-blackhole-external]
+      entryPoints = ["external"]
+      backend = "blackhole"
+      priority = 1003
+      [frontends.jffe_000-1-blackhole-external.routes.match]
+        rule = "Path: /{part0:ui}"
+      [frontends.jffe_000-1-blackhole-external.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+  
+  
+  
+      [frontends.jffe_000-2-jffe_000-0cadb01a066c-internal]
+        entryPoints = ["internal"]
+        backend = "jffe_000-0cadb01a066c"
+        priority = 2008
+        [frontends.jffe_000-2-jffe_000-0cadb01a066c-internal.routes.match]
+          rule = "Path: /{part0:ui}/{part1:(.*)}"
+        [frontends.jffe_000-2-jffe_000-0cadb01a066c-internal.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jffe_000-2-jffe_000-0cadb01a066c-internal.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jffe_000-2-blackhole-internal]
+      entryPoints = ["internal"]
+      backend = "blackhole"
+      priority = 1008
+      [frontends.jffe_000-2-blackhole-internal.routes.match]
+        rule = "Path: /{part0:ui}/{part1:(.*)}"
+      [frontends.jffe_000-2-blackhole-internal.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+      [frontends.jffe_000-2-jffe_000-0cadb01a066c-external]
+        entryPoints = ["external"]
+        backend = "jffe_000-0cadb01a066c"
+        priority = 2008
+        [frontends.jffe_000-2-jffe_000-0cadb01a066c-external.routes.match]
+          rule = "Path: /{part0:ui}/{part1:(.*)}"
+        [frontends.jffe_000-2-jffe_000-0cadb01a066c-external.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jffe_000-2-jffe_000-0cadb01a066c-external.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jffe_000-2-blackhole-external]
+      entryPoints = ["external"]
+      backend = "blackhole"
+      priority = 1008
+      [frontends.jffe_000-2-blackhole-external.routes.match]
+        rule = "Path: /{part0:ui}/{part1:(.*)}"
+      [frontends.jffe_000-2-blackhole-external.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+  
+  
+
+  
+  
+  
+      [frontends.jfmd_01f7bxpxj0z6fsngmqwc1934rb-0-jfmd_01f7bxpxj0z6fsngmqwc1934rb-0cadb01a066c-internal]
+        entryPoints = ["internal"]
+        backend = "jfmd_01f7bxpxj0z6fsngmqwc1934rb-0cadb01a066c"
+        priority = 2014
+        [frontends.jfmd_01f7bxpxj0z6fsngmqwc1934rb-0-jfmd_01f7bxpxj0z6fsngmqwc1934rb-0cadb01a066c-internal.routes.match]
+          rule = "Path: /{part0:metadata}/{part1:(.*)}"
+        [frontends.jfmd_01f7bxpxj0z6fsngmqwc1934rb-0-jfmd_01f7bxpxj0z6fsngmqwc1934rb-0cadb01a066c-internal.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jfmd_01f7bxpxj0z6fsngmqwc1934rb-0-jfmd_01f7bxpxj0z6fsngmqwc1934rb-0cadb01a066c-internal.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jfmd_01f7bxpxj0z6fsngmqwc1934rb-0-blackhole-internal]
+      entryPoints = ["internal"]
+      backend = "blackhole"
+      priority = 1014
+      [frontends.jfmd_01f7bxpxj0z6fsngmqwc1934rb-0-blackhole-internal.routes.match]
+        rule = "Path: /{part0:metadata}/{part1:(.*)}"
+      [frontends.jfmd_01f7bxpxj0z6fsngmqwc1934rb-0-blackhole-internal.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+      [frontends.jfmd_01f7bxpxj0z6fsngmqwc1934rb-0-jfmd_01f7bxpxj0z6fsngmqwc1934rb-0cadb01a066c-external]
+        entryPoints = ["external"]
+        backend = "jfmd_01f7bxpxj0z6fsngmqwc1934rb-0cadb01a066c"
+        priority = 2014
+        [frontends.jfmd_01f7bxpxj0z6fsngmqwc1934rb-0-jfmd_01f7bxpxj0z6fsngmqwc1934rb-0cadb01a066c-external.routes.match]
+          rule = "Path: /{part0:metadata}/{part1:(.*)}"
+        [frontends.jfmd_01f7bxpxj0z6fsngmqwc1934rb-0-jfmd_01f7bxpxj0z6fsngmqwc1934rb-0cadb01a066c-external.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jfmd_01f7bxpxj0z6fsngmqwc1934rb-0-jfmd_01f7bxpxj0z6fsngmqwc1934rb-0cadb01a066c-external.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jfmd_01f7bxpxj0z6fsngmqwc1934rb-0-blackhole-external]
+      entryPoints = ["external"]
+      backend = "blackhole"
+      priority = 1014
+      [frontends.jfmd_01f7bxpxj0z6fsngmqwc1934rb-0-blackhole-external.routes.match]
+        rule = "Path: /{part0:metadata}/{part1:(.*)}"
+      [frontends.jfmd_01f7bxpxj0z6fsngmqwc1934rb-0-blackhole-external.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+  
+  
+
+  
+  
+  
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-0-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-internal]
+        entryPoints = ["internal"]
+        backend = "jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c"
+        priority = 2012
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-0-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-internal.routes.match]
+          rule = "Path: /{part0:artifactory}"
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-0-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-internal.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-0-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-internal.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-0-blackhole-internal]
+      entryPoints = ["internal"]
+      backend = "blackhole"
+      priority = 1012
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-0-blackhole-internal.routes.match]
+        rule = "Path: /{part0:artifactory}"
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-0-blackhole-internal.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-0-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-external]
+        entryPoints = ["external"]
+        backend = "jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c"
+        priority = 2012
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-0-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-external.routes.match]
+          rule = "Path: /{part0:artifactory}"
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-0-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-external.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-0-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-external.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-0-blackhole-external]
+      entryPoints = ["external"]
+      backend = "blackhole"
+      priority = 1012
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-0-blackhole-external.routes.match]
+        rule = "Path: /{part0:artifactory}"
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-0-blackhole-external.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+  
+  
+  
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-1-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-internal]
+        entryPoints = ["internal"]
+        backend = "jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c"
+        priority = 2017
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-1-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-internal.routes.match]
+          rule = "Path: /{part0:artifactory}/{part1:(.*)}"
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-1-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-internal.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-1-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-internal.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-1-blackhole-internal]
+      entryPoints = ["internal"]
+      backend = "blackhole"
+      priority = 1017
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-1-blackhole-internal.routes.match]
+        rule = "Path: /{part0:artifactory}/{part1:(.*)}"
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-1-blackhole-internal.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-1-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-external]
+        entryPoints = ["external"]
+        backend = "jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c"
+        priority = 2017
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-1-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-external.routes.match]
+          rule = "Path: /{part0:artifactory}/{part1:(.*)}"
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-1-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-external.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-1-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-external.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-1-blackhole-external]
+      entryPoints = ["external"]
+      backend = "blackhole"
+      priority = 1017
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-1-blackhole-external.routes.match]
+        rule = "Path: /{part0:artifactory}/{part1:(.*)}"
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-1-blackhole-external.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+  
+  
+  
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-2-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-internal]
+        entryPoints = ["internal"]
+        backend = "jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c"
+        priority = 2008
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-2-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-internal.routes.match]
+          rule = "Path: /{part0:v2}/{part1:(.*)}"
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-2-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-internal.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-2-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-internal.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-2-blackhole-internal]
+      entryPoints = ["internal"]
+      backend = "blackhole"
+      priority = 1008
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-2-blackhole-internal.routes.match]
+        rule = "Path: /{part0:v2}/{part1:(.*)}"
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-2-blackhole-internal.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-2-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-external]
+        entryPoints = ["external"]
+        backend = "jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c"
+        priority = 2008
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-2-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-external.routes.match]
+          rule = "Path: /{part0:v2}/{part1:(.*)}"
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-2-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-external.routes.route_to]
+          rule = "Headers: X-JFrog-Route-To,0cadb01a066c"
+        [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-2-jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c-external.headers.customrequestheaders]
+          X-JFrog-Route-To = ""
+      
+    [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-2-blackhole-external]
+      entryPoints = ["external"]
+      backend = "blackhole"
+      priority = 1008
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-2-blackhole-external.routes.match]
+        rule = "Path: /{part0:v2}/{part1:(.*)}"
+      [frontends.jfrt_01f7bxr762s4dr1x224yxh1efc-2-blackhole-external.routes.route_to]
+        rule = "HeadersRegexp: X-JFrog-Route-To,.*"
+    
+
+    
+
+  
+  
+  
+
+
+[backends]
+
+  
+    
+    
+  
+    
+    
+  
+    [backends.jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c]
+      [backends.jfac_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c.servers.server]
+          url = "http://172.17.0.3:8082"
+          weight = 1
+  
+
+
+  
+    
+    
+  
+    
+    
+  
+    [backends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c]
+      [backends.jfevt_01f7bxpcdnjjsh1zk5xct909a5-0cadb01a066c.servers.server]
+          url = "http://172.17.0.3:8082"
+          weight = 1
+  
+
+
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    [backends.jffe_000-0cadb01a066c]
+      [backends.jffe_000-0cadb01a066c.servers.server]
+          url = "http://172.17.0.3:8082"
+          weight = 1
+  
+
+
+  
+    
+    
+  
+    [backends.jfmd_01f7bxpxj0z6fsngmqwc1934rb-0cadb01a066c]
+      [backends.jfmd_01f7bxpxj0z6fsngmqwc1934rb-0cadb01a066c.servers.server]
+          url = "http://172.17.0.3:8082"
+          weight = 1
+  
+
+
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    [backends.jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c]
+      [backends.jfrt_01f7bxr762s4dr1x224yxh1efc-0cadb01a066c.servers.server]
+          url = "http://172.17.0.3:8082"
+          weight = 1
+  
+
